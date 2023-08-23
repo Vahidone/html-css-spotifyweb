@@ -49,6 +49,8 @@ main .sidebar .installa {
 main .songs {
   width: calc(100% - 230px);
   height: calc(100vh - 90px);
+  overflow: auto;
+  background-color: #141922;
 }
 main .songs .nav-fix {
   width: 100%;
@@ -91,6 +93,14 @@ main .songs .navbar .links ul li a:hover {
 .main-music {
   padding: 30px;
   color: white;
+}
+.main-music h1 {
+  font-size: 2rem;
+  margin-left: 10px;
+}
+.main-music .creato h6 {
+  color: #8a8d91;
+  margin-top: 10px;
 }
 .main-music .row {
   margin-top: 30px;
