@@ -1,0 +1,123 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.debug {
+  background-color: rgb(247, 189, 189);
+  border: 1px solid black;
+  min-height: 80px;
+}
+.d-flex {
+  display: flex;
+}
+.btn {
+  padding: 13px 40px;
+  color: white;
+  background-color: #090b12;
+  border: 1px solid white;
+  border-radius: 40px;
+}
+.btn:hover {
+  background-color: #141922;
+  cursor: pointer;
+  color: rgb(219, 218, 218);
+}
+.active {
+  text-decoration: underline;
+  text-decoration-color: #acff2e;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 5px;
+}
+
+/* MAIN SECTION *********** */
+main {
+  width: 100%;
+  height: calc(100vh - 90px);
+}
+/* sidebar ****** */
+main .sidebar {
+  width: 230px;
+  height: calc(100vh - 90px);
+}
+main .sidebar .installa {
+  width: 100%;
+  height: 90px;
+  align-self: flex-end;
+}
+/* songs part ***** */
+main .songs {
+  width: calc(100% - 230px);
+  height: calc(100vh - 90px);
+}
+main .songs .nav-fix {
+  width: 100%;
+  height: 90px;
+  background-color: #090b12;
+  justify-content: end;
+  align-items: center;
+  padding-right: 5px;
+}
+/* navbar ****** */
+main .songs .navbar {
+  width: 100%;
+  height: 50px;
+  background-color: #141922;
+  justify-content: center;
+}
+main .songs .navbar .links {
+  align-items: center;
+  height: 50px;
+}
+main .songs .navbar .links ul {
+  list-style: none;
+}
+main .songs .navbar .links ul li {
+  margin-right: 30px;
+}
+main .songs .navbar .links ul li a {
+  color: #8a8d91;
+  text-decoration: none;
+  font-size: 0.8rem;
+}
+main .songs .navbar .links ul li a:hover {
+  color: white;
+  text-decoration: underline;
+  text-decoration-color: #acff2e;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 5px;
+}
+/* MAIN MUSIC PART ***** */
+.main-music {
+  padding: 30px;
+  color: white;
+}
+.main-music .row {
+  margin-top: 30px;
+}
+.main-music .row .col {
+  width: calc(100% / 6);
+  padding: 10px;
+}
+.main-music .row .col .card .album-photo {
+  width: 210px;
+  height: 210px;
+}
+.main-music .row .col .card .album-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.main-music .row .col .card .album-name {
+  text-align: center;
+  padding: 20px 0;
+}
+.main-music .row .col .card .album-name h5 {
+  margin-top: 20px;
+  color: #6e7176;
+}
+/* PALY SECTION *********** */
+.play {
+  width: 100%;
+  height: 90px;
+}
