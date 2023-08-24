@@ -223,6 +223,10 @@ main .songs .navbar .links ul li a:hover {
   background-color: rgba(0, 0, 0, 0.2);
   display: none;
 }
+.main-music .popolari .album-photo .overlay {
+  border-radius: 50%;
+  display: none;
+}
 .main-music .row .col .card .album-photo:hover .overlay {
   display: block;
 }
@@ -243,15 +247,11 @@ main .songs .navbar .links ul li a:hover {
   height: 100%;
   object-fit: cover;
 }
-.main-music .row .col .card .album-photo:hover img {
-  filter: ;
-}
+
 .main-music .popolari .album-photo img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
   border-radius: 50%;
 }
+
 .main-music .row .col .card .album-name {
   text-align: center;
   padding: 20px 0;
