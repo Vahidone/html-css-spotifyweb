@@ -7,7 +7,7 @@
 .debug {
   background-color: rgb(247, 189, 189);
   border: 1px solid black;
-  min-height: 80px;
+  min-height: 30px;
 }
 .d-flex {
   display: flex;
@@ -56,6 +56,7 @@ main .sidebar .aside-down {
   height: 90px;
   align-self: flex-end;
   padding: 20px;
+  background-color: black;
 }
 main .sidebar .aside-down hr {
   width: 70%;
@@ -238,4 +239,118 @@ main .songs .navbar .links ul li a:hover {
   width: 100%;
   height: 90px;
   justify-content: space-between;
+  color: white;
+  background-color: #282828;
+}
+.player .brano,
+.player .vol {
+  height: 100%;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 20px;
+}
+.player .brano .copertina {
+  width: 50px;
+  height: 50px;
+}
+.player .brano .copertina img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.player .brano .brano-name {
+  width: 100px;
+  height: 50px;
+  text-align: left;
+  padding-left: 10px;
+  padding-top: 8px;
+}
+.player .brano .brano-name span {
+  font-size: 0.9rem;
+  color: #8a8d91;
+}
+.player .brano .brano-like {
+  width: 100px;
+  height: 50px;
+  text-align: end;
+  padding-right: 10px;
+  padding-top: 16px;
+}
+.player .brano .brano-like span {
+  margin-left: 7px;
+  color: #8a8d91;
+}
+/* controls of player  */
+.player .controls {
+  width: 60%;
+  height: 100%;
+  min-width: 10%;
+}
+.player .controls .tasti,
+.player .controls .play-bar {
+  width: 100%;
+  height: 50%;
+}
+.player .controls .tasti {
+  text-align: center;
+  padding-top: 10px;
+}
+.player .controls .tasti span {
+  margin-right: 20px;
+  font-size: 1.1rem;
+}
+.player .controls .tasti span:nth-child(3) {
+  padding: 10px;
+  font-size: 2rem;
+}
+.player .controls .play-bar {
+  justify-content: center;
+  margin-top: 15px;
+}
+.player .controls .play-bar .play-barra {
+  width: 60%;
+  height: 4px;
+  border-radius: 2px;
+  background-color: gray;
+  margin: 0 20px;
+}
+.player .controls .play-bar .play-barra .barra-progress {
+  width: 30%;
+  height: 100%;
+  background-color: #c5c6c8;
+}
+
+/* volume of player  */
+
+.player .vol {
+  width: 300px;
+  height: 100%;
+}
+
+.player .vol .vol-bar {
+  width: 150px;
+  height: 100%;
+  padding-top: 22px;
+}
+.player .vol .vol-key {
+  width: 150px;
+  height: 100%;
+  padding-top: 17px;
+  padding-left: 20px;
+}
+.player .vol .vol-key span {
+  margin-right: 15px;
+  font-size: 0.9rem;
+}
+.player .vol .vol-bar .barra {
+  width: 100%;
+  height: 4px;
+  margin: auto;
+  border-radius: 2px;
+  background-color: gray;
+}
+.player .vol .vol-bar .barra .bar-progress {
+  width: 30%;
+  height: 100%;
+  background-color: #c5c6c8;
 }
