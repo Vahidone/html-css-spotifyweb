@@ -193,13 +193,16 @@ main .songs .navbar {
   top: 90px;
   z-index: 999;
 }
-main .songs .navbar .links {
+main .songs .links {
   align-items: center;
   height: 50px;
   position: relative;
+  padding: 10px;
 }
 main .songs .navbar .links ul {
   list-style: none;
+  width: 660px;
+  flex-wrap: wrap;
 }
 main .songs .navbar .links ul li {
   margin-right: 30px;
@@ -468,7 +471,7 @@ main .songs .navbar .links .mini-dash {
 }
 
 /* *******************************************
- MEDIA QUERY FOR Spotify-"M" 1100px 
+ MEDIA QUERY FOR Spotify-"MD" 1100px 
  ****************************************** */
 @media screen and (max-width: 1100px) {
   .main-music .row {
@@ -477,4 +480,25 @@ main .songs .navbar .links .mini-dash {
   .main-music .row .col {
     flex-basis: calc(100% / 4);
   }
+  main .songs .navbar .links ul {
+    width: 805px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  main .songs .navbar .links ul li {
+    margin-right: 70px;
+  }
+  main .songs .navbar .links ul li a {
+    font-size: 0.8rem;
+  }
+  main .songs .navbar .links .mini-dash {
+    top: 28px;
+    left: 36px;
+  }
+}
+
+/* *******************************************
+ MEDIA QUERY FOR Spotify-"S" 700px 
+ ****************************************** */
+@media screen and (max-width: 700px) {
 }
