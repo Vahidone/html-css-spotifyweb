@@ -23,7 +23,7 @@
 .btn {
   padding: 13px 40px;
   color: white;
-  background-color: #090b12;
+  background-color: rgba(0, 0, 0, 0.3);
   border: 1px solid white;
   border-radius: 40px;
 }
@@ -50,6 +50,7 @@ main .sidebar {
 .aside-top {
   width: 100%;
   height: calc(100% - 90px);
+  padding-top: 15px;
 }
 main .sidebar .aside-down {
   width: 100%;
@@ -61,6 +62,9 @@ main .sidebar .aside-down {
 main .sidebar .aside-down hr {
   width: 70%;
   margin: 10px 0;
+}
+main .sidebar .aside-down span:hover {
+  color: white;
 }
 
 main .sidebar .home {
@@ -83,17 +87,20 @@ main .sidebar .home .logo span:last-child {
 }
 main .sidebar .home .cerca {
   width: 100%;
-  padding: 20px;
   line-height: 2.1;
 }
 main .sidebar .home .cerca span {
   display: block;
+  margin-left: 20px;
 }
 main .sidebar .home .cerca span:hover {
   color: white;
 }
 main .sidebar .home .cerca span:first-child {
   color: rgb(212, 209, 209);
+  margin-left: 0;
+  padding-left: 18px;
+  border-left: 3px solid greenyellow;
 }
 main .sidebar .home .cerca span:first-child:hover {
   color: white;
