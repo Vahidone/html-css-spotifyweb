@@ -196,6 +196,7 @@ main .songs .navbar {
 main .songs .navbar .links {
   align-items: center;
   height: 50px;
+  position: relative;
 }
 main .songs .navbar .links ul {
   list-style: none;
@@ -203,6 +204,7 @@ main .songs .navbar .links ul {
 main .songs .navbar .links ul li {
   margin-right: 30px;
 }
+
 main .songs .navbar .links ul li a {
   color: #8a8d91;
   text-decoration: none;
@@ -212,6 +214,14 @@ main .songs .navbar .links ul li a:hover {
   color: white;
   text-decoration-thickness: 2px;
   text-underline-offset: 5px;
+}
+main .songs .navbar .links .mini-dash {
+  width: 35px;
+  height: 3px;
+  background-color: yellowgreen;
+  position: absolute;
+  left: 23px;
+  bottom: 10px;
 }
 /* MAIN MUSIC PART ***** */
 .main-music {
