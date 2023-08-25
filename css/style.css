@@ -83,26 +83,43 @@ main .sidebar .home .logo span:last-child {
 }
 main .sidebar .home .cerca {
   width: 100%;
-
   padding: 20px;
   line-height: 2.1;
 }
 main .sidebar .home .cerca span {
   display: block;
 }
+main .sidebar .home .cerca span:hover {
+  color: white;
+}
+main .sidebar .home .cerca span:first-child {
+  color: rgb(212, 209, 209);
+}
+main .sidebar .home .cerca span:first-child:hover {
+  color: white;
+}
+
 main .sidebar .home .cerca span i {
-  filter: invert();
   font-size: 1.2rem;
   font-weight: bold;
 }
+
 main .sidebar .playlist {
   width: 100%;
   padding: 20px 0 0 20px;
   flex-direction: column;
 }
+main .sidebar .playlist h4 {
+  color: white;
+}
+
 main .sidebar .playlist .p-list .crea {
   padding-top: 15px;
   padding-left: 5px;
+}
+main .sidebar .playlist .p-list:hover .plus,
+main .sidebar .playlist .p-list:hover .crea {
+  color: white;
 }
 main .sidebar .name-playlist {
   width: 100%;
@@ -130,8 +147,9 @@ main .sidebar .playlist h4 {
 main .sidebar .playlist .plus {
   height: 50px;
   font-size: 2.8rem;
-  color: white;
+  color: rgb(212, 209, 209);
 }
+
 main .sidebar .playlist .crea {
   height: 50px;
 }
@@ -166,6 +184,7 @@ main .songs .navbar {
   justify-content: center;
   position: sticky;
   top: 90px;
+  z-index: 999;
 }
 main .songs .navbar .links {
   align-items: center;
