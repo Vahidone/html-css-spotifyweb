@@ -321,6 +321,10 @@ main .songs .navbar .links ul li a:hover {
   font-size: 0.9rem;
   color: #8a8d91;
 }
+.player .brano .brano-name span:hover {
+  color: white;
+  text-decoration: underline;
+}
 .player .brano .brano-like {
   width: 100px;
   height: 50px;
@@ -331,6 +335,9 @@ main .songs .navbar .links ul li a:hover {
 .player .brano .brano-like span {
   margin-left: 7px;
   color: #8a8d91;
+}
+.player .brano .brano-like span:hover {
+  color: white;
 }
 /* controls of player  */
 .player .controls {
@@ -351,9 +358,15 @@ main .songs .navbar .links ul li a:hover {
   margin-right: 20px;
   font-size: 1.1rem;
 }
+.player .controls .tasti span i:hover {
+  scale: 1.1;
+}
 .player .controls .tasti span:nth-child(3) {
   padding: 10px;
   font-size: 2rem;
+}
+.player .controls .tasti span:nth-child(3) i:hover {
+  scale: 1.4;
 }
 .player .controls .play-bar {
   justify-content: center;
@@ -370,6 +383,22 @@ main .songs .navbar .links ul li a:hover {
   width: 30%;
   height: 100%;
   background-color: #c5c6c8;
+  justify-content: flex-end;
+  align-items: center;
+}
+.player .controls .play-bar .pallina {
+  width: 17px;
+  height: 17px;
+  border-radius: 50%;
+  background-color: white;
+  display: none;
+}
+.player .controls .play-bar:hover .pallina {
+  display: block;
+}
+
+.player .controls .play-bar:hover .barra-progress {
+  background-color: #acff2e;
 }
 
 /* volume of player  */
@@ -394,6 +423,9 @@ main .songs .navbar .links ul li a:hover {
   margin-right: 15px;
   font-size: 0.9rem;
 }
+.player .vol .vol-key span i:hover {
+  scale: 1.1;
+}
 .player .vol .vol-bar .barra {
   width: 100%;
   height: 4px;
@@ -401,8 +433,23 @@ main .songs .navbar .links ul li a:hover {
   border-radius: 2px;
   background-color: gray;
 }
-.player .vol .vol-bar .barra .bar-progress {
+.player .vol .vol-bar .bar-progress {
   width: 30%;
   height: 100%;
   background-color: #c5c6c8;
+  justify-content: flex-end;
+  align-items: center;
+}
+.player .vol .vol-bar:hover .bar-progress {
+  background-color: #acff2e;
+}
+.player .vol .vol-bar .ball {
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  background-color: white;
+  display: none;
+}
+.player .vol .vol-bar:hover .ball {
+  display: block;
 }
