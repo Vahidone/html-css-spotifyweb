@@ -240,10 +240,14 @@ main .songs .navbar .links .mini-dash {
 }
 .main-music .row {
   margin-top: 30px;
+  flex-wrap: wrap;
 }
 .main-music .row .col {
   width: calc(100% / 6);
-  padding: 10px;
+}
+.main-music .row .col .card {
+  width: 90%;
+  margin: 0 auto;
 }
 .main-music .row .col .card .album-photo {
   width: 210px;
@@ -462,4 +466,13 @@ main .songs .navbar .links .mini-dash {
 }
 .player .vol .vol-bar:hover .ball {
   display: block;
+}
+
+/* *******************************************
+ MEDIA QUERY FOR Spotify-"M" 1100px 
+ ****************************************** */
+@media screen and (max-width: 1100px) {
+  .main-music .row .col {
+    width: calc(100% / 4);
+  }
 }
