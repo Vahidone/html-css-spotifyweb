@@ -553,3 +553,22 @@ main .songs .navbar .links .mini-dash {
     width: 10px;
   }
 }
+
+/* *******************************************
+ MEDIA QUERY FOR Spotify-"XS" 600px 
+ ****************************************** */
+
+@media screen and (max-width: 600px) {
+  .player .brano .brano-name {
+    width: 76px;
+  }
+  .player .vol {
+    width: 180px;
+  }
+  .player .controls {
+    width: 35%;
+  }
+  .player .controls .tasti {
+    width: 110%;
+  }
+}
