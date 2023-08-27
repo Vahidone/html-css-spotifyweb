@@ -63,7 +63,11 @@ main .sidebar .aside-down hr {
   width: 70%;
   margin: 10px 0;
 }
-main .sidebar .aside-down span:hover {
+main .sidebar .aside-down div span {
+  margin-left: 10px;
+}
+main .sidebar .aside-down div:hover i,
+main .sidebar .aside-down div:hover span {
   color: white;
 }
 
@@ -88,26 +92,32 @@ main .sidebar .home .cerca {
   width: 100%;
   line-height: 2.1;
 }
-main .sidebar .home .cerca span {
-  display: block;
-  margin-left: 20px;
+main .sidebar .home .cerca div {
+  height: 40px;
+  margin-left: 19px;
+  align-items: center;
 }
-main .sidebar .home .cerca span:hover {
-  color: white;
-}
-main .sidebar .home .cerca span:first-child {
-  color: rgb(212, 209, 209);
-  margin-left: 0;
-  padding-left: 18px;
-  border-left: 3px solid greenyellow;
-}
-main .sidebar .home .cerca span:first-child:hover {
+main .sidebar .home .cerca div:hover span,
+main .sidebar .home .cerca div:hover i {
   color: white;
 }
 
-main .sidebar .home .cerca span i {
-  font-size: 1.2rem;
-  font-weight: bold;
+main .sidebar .home .cerca span {
+  display: block;
+  margin-left: 10px;
+}
+
+main .sidebar .home .cerca div:first-child {
+  color: rgb(212, 209, 209);
+  margin-left: 0;
+  padding-left: 17px;
+  border-left: 3px solid greenyellow;
+}
+main .sidebar .home .cerca div:first-child span {
+  margin-bottom: -5px;
+}
+main .sidebar .home .cerca div:first-child i {
+  margin-left: -1px;
 }
 
 main .sidebar .playlist {
@@ -570,5 +580,51 @@ main .songs .navbar .links .mini-dash {
   }
   .player .controls .tasti {
     width: 110%;
+  }
+  main .sidebar .playlist {
+    display: none;
+  }
+  main .sidebar .name-playlist {
+    display: none;
+  }
+  main .sidebar .home .logo span:last-child {
+    display: none;
+  }
+  main .sidebar .home .cerca span {
+    display: none;
+  }
+  main .sidebar .home .cerca div:first-child {
+    border-left: none;
+  }
+  main .sidebar .home .logo span:first-child {
+    font-size: 1.7rem;
+  }
+  main .sidebar .home .logo {
+    padding: 13px;
+  }
+  main .sidebar .aside-down hr {
+    display: none;
+  }
+  main .sidebar .aside-down div {
+    margin-top: 10px;
+  }
+  main .sidebar .aside-down div:last-child i {
+    font-size: 1.4rem;
+    margin-left: -3px;
+  }
+  main .sidebar .aside-down div span {
+    display: none;
+  }
+  main .sidebar {
+    width: 50px;
+  }
+  main .songs {
+    width: calc(100% - 50px);
+  }
+  main .songs .nav-fix {
+    width: calc(100% - 50px);
+  }
+  main .songs .navbar .links .mini-dash {
+    left: 40px;
   }
 }
