@@ -391,10 +391,10 @@ main .songs .navbar .links .mini-dash {
 }
 .player .controls .tasti span:nth-child(3) {
   padding: 10px;
-  font-size: 2rem;
+  font-size: 1.2rem;
 }
 .player .controls .tasti span:nth-child(3) i:hover {
-  scale: 1.4;
+  scale: 1.6;
 }
 .player .controls .play-bar {
   justify-content: center;
@@ -413,11 +413,13 @@ main .songs .navbar .links .mini-dash {
   background-color: #c5c6c8;
   justify-content: flex-end;
   align-items: center;
+  border-radius: 3px;
 }
 .player .controls .play-bar .pallina {
   width: 17px;
   height: 17px;
   border-radius: 50%;
+  flex-shrink: 0;
   background-color: white;
   display: none;
 }
@@ -467,6 +469,7 @@ main .songs .navbar .links .mini-dash {
   background-color: #c5c6c8;
   justify-content: flex-end;
   align-items: center;
+  border-radius: 2px;
 }
 .player .vol .vol-bar:hover .bar-progress {
   background-color: #acff2e;
@@ -475,6 +478,7 @@ main .songs .navbar .links .mini-dash {
   width: 13px;
   height: 13px;
   border-radius: 50%;
+  flex-shrink: 0;
   background-color: white;
   display: none;
 }
